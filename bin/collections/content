@@ -1,0 +1,25 @@
+Interface Collections
+Trong Interface Collections chúng ta có các Interface chính như: List Interface, Set, SortedSet, Map và SortedMap.
+List: Các phần tử trong List Interface được sắp xếp có thứ tự và có thể có giá trị giống nhau.
+Set: Các phần tử trong Set là duy nhất (nghĩa là giá trị của các phần tử này không được giống nhau).
+SortedSet: Là 1 dạng riêng của Set Interface, trong đó giá trị của các phần tử mặc định được sắp xếp tăng dần.
+Map: Giá trị của mỗi phần tử trong Map bao gồm 2 phần đó là khóa (key) và giá trị tương ứng của key đó (value) và khóa của các phần tử này là duy nhất.
+Sorted Map: Là 1 dạng riêng của Map Interface, trong đó giá trị key được sắp xếp tăng dần.
+
+Class Collections
+Java cung cấp một tập hợp các lớp tiêu chuẩn dùng để triển khai các Interface Collection.
+LinkedList: Là 1 cấu trúc dữ liệu lưu trữ các phần tử dưới dạng danh sách. Các phần tử trong LinkedList được sắp xếp có thứ tự và có thể có giá trị giống nhau.
+ArrayList: Là kiểu danh sách sử dụng cấu trúc mảng để lưu trữ phần tử. Thứ tự các phần tử dựa theo thứ tự lúc thêm vào và giá trị của các phần tử này có thể trùng nhau.
+HashSet: Thứ tự các phần tử trong HashSet không dựa theo thứ tự lúc thêm vào và giá trị của các phần tử này là duy nhất.
+TreeSet:  Các phần tử trong TreeSet mặc định được sắp xếp tăng dần và giá trị của các phần tử này là duy nhất.
+HashMap: Giá trị của mỗi phần tử trong HashMap bao gồm 2 phần đó là khóa (key) và giá trị tương ứng của key đó (value) và khóa của các phần tử này là duy nhất. HashMap cho phép truy xuất trực tiếp dữ liệu bằng khóa duy nhất của nó.
+TreeMap: Giá trị của mỗi phần tử trong TreeMap bao gồm 2 phần đó là khóa (key) và giá trị tương ứng của key đó (value) và khóa của các phần tử này là duy nhất. Giá trị của các phần tử trong TreeMap được sắp xếp tăng dần.
+
+Algorithms
+Collections Framework trong Java cung cấp các thuật toán để các Collection có thể sử dụng được.
+
+Iterator
+Iterator là một Interface cung cấp một số các phương thức để duyệt (lặp) qua các phần tử của bất kỳ tập hợp nào. Ngoài ra, Iterator còn có khả năng xóa những phần tử của một tập hợp trong quá trình lặp.
+
+Interface Comparable và Comparator
+Java cung cấp 2 Interface Comparable và Comparator để so sánh và sắp xếp vị trí 2 đối tượng của một Collection.
