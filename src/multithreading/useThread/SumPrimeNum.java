@@ -8,7 +8,7 @@ public class SumPrimeNum {
 
 	private static boolean flag = false;
 
-	public static boolean checkPrime(int n) {
+	public boolean checkPrime(int n) {
 		if (n < 2)
 			return false;
 		for (int i = 2; i <= Math.sqrt(n); i++)
@@ -17,36 +17,44 @@ public class SumPrimeNum {
 		return true;
 	}
 
+	public void findPrime() {
+		for (int i = 0; i <= 1000; i++) {
+			if (checkPrime(i)) {
+				x = i;
+				flag = true;
+				while (flag);
+			}
+		}
+	}
+
+	public void sumPrime(Thread t1) {
+		while (t1.isAlive()) {
+			if (flag) {
+				sum += x;
+				flag = false;
+			}
+		}
+	}
+
 	public static void main(String[] args) {
+
+		SumPrimeNum sumPrimeNum = new SumPrimeNum();
 
 		Thread t1 = new Thread() {
 			public void run() {
-				for (int i = 0; i <= 1000; i++) {
-					System.out.println("t1 running");
-					if (checkPrime(i)) {
-						x = i;
-						flag = true;
-						System.out.println(i);
-						while(flag);
-					}
-				}
+				sumPrimeNum.findPrime();
 			}
 		};
 
 		Thread t2 = new Thread() {
 			public void run() {
-				while (t1.isAlive()) {
-					if (flag) {
-						System.out.println("t2 sum");
-						sum += x;
-						flag = false;
-					}
-				}
+				sumPrimeNum.sumPrime(t1);
 			}
 		};
 
 		t1.start();
 		t2.start();
+
 		try {
 			t1.join();
 		} catch (InterruptedException e) {
