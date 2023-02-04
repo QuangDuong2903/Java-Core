@@ -1,4 +1,4 @@
-package method_references;
+package methodreferences;
 
 @FunctionalInterface
 public interface Sayable {

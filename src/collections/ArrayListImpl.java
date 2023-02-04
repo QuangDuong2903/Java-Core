@@ -1,4 +1,4 @@
-package collections.list;
+package collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,18 +15,18 @@ public class ArrayListImpl {
 		List<Integer> list = new ArrayList<>();
 		
 		list.add(5);
-		list.add(1);
-		list.add(2);
-		list.add(3);
-		list.add(4);
+		//list.add(1);
+		//list.add(2);
+		//list.add(3);
+		//list.add(4);
 
 		Iterator<Integer> iterator = list.iterator();
 
-		System.out.println("\nHiển thị phần tử sử dụng ListIterator: ");
+		System.out.println("Hiển thị phần tử sử dụng ListIterator: ");
 		while (iterator.hasNext())
 			System.out.print(iterator.next() + " ");
 
-		System.out.print("\nPhần tử có chỉ số 2 trong list là: " + list.get(2));
+		//System.out.print("\nPhần tử có chỉ số 2 trong list là: " + list.get(2));
 
 		int index, value;
 		System.out.print("\nNhập index phần tử muốn chỉnh sửa: ");

@@ -49,8 +49,9 @@ public class SumPrime {
 
 	public static void main(String[] args) throws InterruptedException {
 		SumPrime sumPrime = new SumPrime();
-		Runnable r1 = () -> sumPrime.findPrime();
-		Thread thread1 = new Thread(r1);
+		//Runnable r1 = () -> sumPrime.findPrime();
+		//Thread thread1 = new Thread(r1);
+		Thread thread1 = new Thread(sumPrime::findPrime);
 		Runnable r2 = () -> sumPrime.calculate(thread1);
 		Thread thread2 = new Thread(r2);
 		thread1.start();

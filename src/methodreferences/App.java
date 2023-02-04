@@ -1,4 +1,4 @@
-package method_references;
+package methodreferences;
 
 import java.util.ArrayList;
 import java.util.List;

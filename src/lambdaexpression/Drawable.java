@@ -1,4 +1,4 @@
-package lambda_expression;
+package lambdaexpression;
 
 @FunctionalInterface
 public interface Drawable {
