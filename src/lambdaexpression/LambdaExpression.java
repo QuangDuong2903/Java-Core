@@ -8,14 +8,10 @@ public class LambdaExpression {
 
 	public static void main(String[] args) {
 		int width = 10;
-		Drawable drawable = () -> {
-			System.out.println("Drawing " + width);
-		};
+		Drawable drawable = () -> System.out.println("Drawing " + width);
 		drawable.draw();
 
-		Speakable speakable = () -> {
-			return "I can speak";
-		};
+		Speakable speakable = () -> "I can speak";
 		System.out.println(speakable.speak());
 
 		List<Integer> list = new ArrayList<>();

@@ -1,7 +1,5 @@
 package collections.set;
 
-import java.util.Set;
-import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class TreeSetExample {
