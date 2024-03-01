@@ -1,6 +1,6 @@
-package designpattern.builder.builder;
+package designpattern.creational.builder.builder;
 
-import designpattern.builder.product.House;
+import designpattern.creational.builder.product.House;
 
 public interface HouseBuilder {
     void floor();

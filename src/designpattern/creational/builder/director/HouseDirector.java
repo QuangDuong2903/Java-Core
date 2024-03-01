@@ -1,7 +1,7 @@
-package designpattern.builder.director;
+package designpattern.creational.builder.director;
 
-import designpattern.builder.builder.HouseBuilder;
-import designpattern.builder.product.House;
+import designpattern.creational.builder.builder.HouseBuilder;
+import designpattern.creational.builder.product.House;
 
 public class HouseDirector {
 

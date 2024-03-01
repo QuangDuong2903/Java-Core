@@ -1,7 +1,7 @@
-package designpattern.builder.concreate;
+package designpattern.creational.builder.concreate;
 
-import designpattern.builder.builder.HouseBuilder;
-import designpattern.builder.product.House;
+import designpattern.creational.builder.builder.HouseBuilder;
+import designpattern.creational.builder.product.House;
 
 public class BungalowBuilder implements HouseBuilder {
 

@@ -1,4 +1,4 @@
-package designpattern.builder.product;
+package designpattern.creational.builder.product;
 
 public class Book {
 

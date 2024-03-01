@@ -1,9 +1,9 @@
-package designpattern.builder;
+package designpattern.creational.builder;
 
-import designpattern.builder.concreate.BungalowBuilder;
-import designpattern.builder.director.HouseDirector;
-import designpattern.builder.product.Book;
-import designpattern.builder.product.House;
+import designpattern.creational.builder.concreate.BungalowBuilder;
+import designpattern.creational.builder.director.HouseDirector;
+import designpattern.creational.builder.product.Book;
+import designpattern.creational.builder.product.House;
 
 public class Demo {
 
