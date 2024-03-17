@@ -18,5 +18,6 @@ public class Demo {
         director.buildLamborghini(manualBuilder);
         manual = manualBuilder.build();
         System.out.println(car + " " + manual);
+
     }
 }
