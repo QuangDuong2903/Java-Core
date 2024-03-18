@@ -1,4 +1,4 @@
-package designpattern.decorator;
+package designpattern.structural.decorator;
 
 public class ChristmasTreeLimitedDecorator extends ChristmasTreeDecorator {
     public ChristmasTreeLimitedDecorator(ChristmasTreeComponent christmasTreeComponent) {

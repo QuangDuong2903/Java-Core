@@ -1,4 +1,4 @@
-package designpattern.decorator;
+package designpattern.structural.decorator;
 
 public class ChristmasTree implements ChristmasTreeComponent {
 

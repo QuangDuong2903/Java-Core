@@ -1,4 +1,4 @@
-package designpattern.adapter;
+package designpattern.structural.adapter;
 
 public class XML {
 
