@@ -1,8 +1,5 @@
 package designpattern.creational.builder;
 
-import java.nio.file.Path;
-import java.security.KeyStore;
-
 public class Demo {
 
     public static void main(String[] args) {
