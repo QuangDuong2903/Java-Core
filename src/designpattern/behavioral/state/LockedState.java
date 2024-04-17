@@ -7,14 +7,12 @@ public class LockedState extends State {
 
     @Override
     public String onHome() {
-        System.out.print("State: Locked, ");
-        return "Locked screen, cannot go to home";
+        return "State: Locked. Locked screen, cannot go to home";
     }
 
     @Override
     public String onOffOn() {
-        System.out.print("State: Locked -> Ready, ");
         phone.setState(new ReadyState(phone));
-        return phone.unlock();
+        return "State: Locked -> Ready, unlock screen";
     }
 }

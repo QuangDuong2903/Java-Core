@@ -16,15 +16,11 @@ public class Phone {
         this.state = state;
     }
 
-    public String lock() {
-        return "Locking phone and turning off screen";
+    public String onHome() {
+        return state.onHome();
     }
 
-    public String home() {
-        return "Going to home screen";
-    }
-
-    public String unlock() {
-        return "Unlocking the phone home";
+    public String onOffOn() {
+        return state.onOffOn();
     }
 }
