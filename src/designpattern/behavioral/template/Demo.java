@@ -1,5 +1,6 @@
 package designpattern.behavioral.template;
 
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class Demo {
@@ -25,6 +26,6 @@ public class Demo {
                 default -> dataMiner;
             };
             dataMiner.mine(name);
-        };
+        }
     }
 }
