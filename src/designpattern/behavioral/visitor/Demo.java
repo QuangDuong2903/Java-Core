@@ -3,7 +3,7 @@ package designpattern.behavioral.visitor;
 public class Demo {
 
     public static void export(Node... node) {
-        XMLExportVisitor exportVisitor = new XMLExportVisitor();
+        Visitor exportVisitor = new XMLExportVisitor();
         for (Node n : node)
             n.accept(exportVisitor);
     }
